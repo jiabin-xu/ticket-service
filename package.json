@@ -1,0 +1,14 @@
+{
+  "name": "ticket-server",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm run build --filter ./packages/*",
+    "test": "pnpm run test --filter ./packages/*"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
+}
