@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: ticket-service
+build:
+  local:
+    push: false
+  artifacts:
+    - image: auth
+      context: packages/auth
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+      - infra/k8s/auth.yml
+      - infra/k8s/ingress.yml
