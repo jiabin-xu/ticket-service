@@ -1,0 +1,31 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "A simple NestJS application",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.0.0",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^9.0.0",
+    "ts-jest": "^27.0.0",
+    "jest": "^27.0.0",
+    "ts-loader": "^9.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  }
+}
